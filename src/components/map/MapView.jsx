@@ -2,7 +2,9 @@
 import { lazy, Suspense } from "react";
 import ClientOnly from "@/components/ClientOnly";
 
-const LeafletMap = lazy(() => import("@/components/map/LeafletMap"));
+const LeafletMap = typeof window !== "undefined"
+  ? lazy(() => import("@/components/map/LeafletMap"))
+  : () => null;
 
 function MapSkeleton({ label }) {
   return (
