@@ -2,13 +2,13 @@ import { jsxs, jsx, Fragment } from "react/jsx-runtime";
 import { useNavigate } from "@tanstack/react-router";
 import { useState, useEffect, useMemo } from "react";
 import { SearchX, ShieldAlert, LocateFixed } from "lucide-react";
-import { P as PageHeader } from "./PageHeader-Be1iCcvm.js";
-import { n as nearestCameras, C as CameraCard } from "./CameraCard-DhMVfWhx.js";
-import { M as MapView } from "./MapView-y0mMqDjc.js";
-import { u as useLanguage } from "./router-D-9uSlfh.js";
+import { P as PageHeader } from "./PageHeader-C9I1une-.js";
+import { n as nearestCameras, C as CameraCard } from "./CameraCard-BsYiZvoQ.js";
+import { M as MapView } from "./MapView-bnyFvxJT.js";
+import { u as useLanguage } from "./router-BSgfvSGz.js";
 import { u as useGeolocation } from "./useGeolocation-NKp5thlV.js";
 import { g as getAllCameras } from "./cameraService-D_S4R9Wf.js";
-import "./LanguageToggle-Bz6r3-p3.js";
+import "./LanguageToggle-CflZN9aU.js";
 import "@tanstack/react-query";
 function EmptyState(props) {
   const { icon: Icon = SearchX, title, description = null, action = null } = props;

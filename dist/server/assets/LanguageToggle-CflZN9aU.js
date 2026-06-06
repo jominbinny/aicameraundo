@@ -1,6 +1,6 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { Languages } from "lucide-react";
-import { u as useLanguage } from "./router-D-9uSlfh.js";
+import { u as useLanguage } from "./router-BSgfvSGz.js";
 const logo = "/assets/logo-D3lXJFCB.png";
 function LanguageToggle() {
   const { lang, toggleLanguage } = useLanguage();

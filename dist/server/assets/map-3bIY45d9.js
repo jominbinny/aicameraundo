@@ -1,13 +1,13 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useMemo, useCallback } from "react";
 import { Search, LocateFixed, X } from "lucide-react";
-import { P as PageHeader } from "./PageHeader-Be1iCcvm.js";
-import { u as useLanguage } from "./router-D-9uSlfh.js";
-import { M as MapView } from "./MapView-y0mMqDjc.js";
+import { P as PageHeader } from "./PageHeader-C9I1une-.js";
+import { u as useLanguage } from "./router-BSgfvSGz.js";
+import { M as MapView } from "./MapView-bnyFvxJT.js";
 import { u as useGeolocation } from "./useGeolocation-NKp5thlV.js";
 import { a as getDistricts, s as searchCameras } from "./cameraService-D_S4R9Wf.js";
 import "@tanstack/react-router";
-import "./LanguageToggle-Bz6r3-p3.js";
+import "./LanguageToggle-CflZN9aU.js";
 import "@tanstack/react-query";
 function SearchBar({ query, onQueryChange, district, onDistrictChange, districts }) {
   const { t } = useLanguage();

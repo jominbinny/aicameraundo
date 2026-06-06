@@ -1,7 +1,7 @@
 import { jsx, jsxs } from "react/jsx-runtime";
 import { Link } from "@tanstack/react-router";
-import { l as logo, L as LanguageToggle } from "./LanguageToggle-Bz6r3-p3.js";
-import { u as useLanguage } from "./router-D-9uSlfh.js";
+import { l as logo, L as LanguageToggle } from "./LanguageToggle-CflZN9aU.js";
+import { u as useLanguage } from "./router-BSgfvSGz.js";
 function PageHeader({ subtitle }) {
   const { t } = useLanguage();
   return /* @__PURE__ */ jsx("header", { className: "sticky top-0 z-[900] border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80", children: /* @__PURE__ */ jsxs("div", { className: "mx-auto flex max-w-xl items-center justify-between gap-2 px-4 py-3", children: [

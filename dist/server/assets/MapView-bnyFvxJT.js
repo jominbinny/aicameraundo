@@ -5,7 +5,7 @@ function ClientOnly({ children, fallback = null }) {
   useEffect(() => setMounted(true), []);
   return mounted ? children : fallback;
 }
-const LeafletMap = lazy(() => import("./LeafletMap-OM9_6yYI.js"));
+const LeafletMap = lazy(() => import("./LeafletMap-Dx_uYEEo.js"));
 function MapSkeleton({ label }) {
   return /* @__PURE__ */ jsx("div", { className: "flex h-full w-full items-center justify-center skeleton", children: /* @__PURE__ */ jsx("span", { className: "text-sm text-muted-foreground", children: label || "Loading map…" }) });
 }

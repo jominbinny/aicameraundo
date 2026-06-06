@@ -1,8 +1,8 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { Link } from "@tanstack/react-router";
 import { Map, LocateFixed, Route, Camera } from "lucide-react";
-import { L as LanguageToggle, l as logo } from "./LanguageToggle-Bz6r3-p3.js";
-import { u as useLanguage } from "./router-D-9uSlfh.js";
+import { L as LanguageToggle, l as logo } from "./LanguageToggle-CflZN9aU.js";
+import { u as useLanguage } from "./router-BSgfvSGz.js";
 import { b as getCameraCount, a as getDistricts } from "./cameraService-D_S4R9Wf.js";
 import "@tanstack/react-query";
 import "react";
