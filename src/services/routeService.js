@@ -9,8 +9,8 @@ const OSRM = "https://router.project-osrm.org/route/v1/driving";
  */
 export async function geocode(query) {
   const url = `${NOMINATIM}?q=${encodeURIComponent(
-    query + ", Kerala, India",
-  )}&format=json&limit=1`;
+    query,
+  )}&format=json&countrycodes=in&viewbox=74.5,12.9,77.6,8.1&bounded=1&limit=1`;
   const res = await fetch(url, { headers: { Accept: "application/json" } });
   if (!res.ok) throw new Error("Geocoding failed");
   const data = await res.json();
@@ -30,8 +30,8 @@ export async function suggestPlaces(query, limit = 5) {
   const q = query.trim();
   if (q.length < 3) return [];
   const url = `${NOMINATIM}?q=${encodeURIComponent(
-    q + ", Kerala, India",
-  )}&format=json&addressdetails=1&limit=${limit}`;
+    q,
+  )}&format=json&countrycodes=in&viewbox=74.5,12.9,77.6,8.1&bounded=1&addressdetails=1&limit=${limit}`;
   const res = await fetch(url, { headers: { Accept: "application/json" } });
   if (!res.ok) return [];
   const data = await res.json();

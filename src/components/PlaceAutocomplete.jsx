@@ -29,18 +29,26 @@ export default function PlaceAutocomplete({
       setOpen(false);
       return;
     }
+    let active = true;
     setLoading(true);
     const handle = setTimeout(async () => {
       try {
         const res = await suggestPlaces(q);
-        setItems(res);
-        setOpen(res.length > 0);
-        setActive(-1);
+        if (active) {
+          setItems(res);
+          setOpen(res.length > 0);
+          setActive(-1);
+        }
       } finally {
-        setLoading(false);
+        if (active) {
+          setLoading(false);
+        }
       }
     }, 350);
-    return () => clearTimeout(handle);
+    return () => {
+      active = false;
+      clearTimeout(handle);
+    };
   }, [value]);
 
   // Close on outside click.

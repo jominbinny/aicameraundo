@@ -4,12 +4,9 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect } from "react";
 
-import appCss from "../styles.css?url";
 import { LanguageProvider } from "@/hooks/useLanguage";
 import BottomNav from "@/components/BottomNav";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -75,59 +72,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1, viewport-fit=cover",
-      },
-      { title: "AI Camera Undo — Find Kerala MVD AI Traffic Cameras" },
-      {
-        name: "description",
-        content:
-          "AI Camera Undo helps you locate Kerala Motor Vehicle Department AI traffic cameras on an interactive map. Find cameras near you or along your route.",
-      },
-      {
-        name: "keywords",
-        content:
-          "Kerala AI camera, MVD AI camera, Kerala traffic camera, AI Camera Undo, Kerala speed camera map",
-      },
-      { name: "author", content: "AI Camera Undo" },
-      { name: "theme-color", content: "#0f9d72" },
-      { property: "og:title", content: "AI Camera Undo" },
-      {
-        property: "og:description",
-        content: "Find Kerala MVD AI traffic cameras on an interactive map.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/icons/icon-192.png" },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

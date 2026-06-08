@@ -10,7 +10,7 @@ export default function PageHeader({ subtitle }) {
     <header className="sticky top-0 z-[900] border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="mx-auto flex max-w-xl items-center justify-between gap-2 px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="AI Camera Undo logo" width={36} height={36} className="h-9 w-9" />
+          <img src={logo} alt="SafeDrive Kerala logo" width={36} height={36} className="h-9 w-9" />
           <div className="leading-tight">
             <p className="text-sm font-bold text-foreground">{t("appName")}</p>
             {subtitle && <p className="text-xs text-muted-foreground">{subtitle}</p>}

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/fine-calculator")({
   head: () => ({
     meta: [
-      { title: "Fine Calculator — AI Camera Undo" },
+      { title: "Fine Calculator — SafeDrive Kerala" },
       {
         name: "description",
         content: "Calculate expected traffic fines for common violations detected by Kerala MVD AI cameras.",
@@ -54,9 +54,12 @@ function FineCalculatorPage() {
       <PageHeader subtitle={t("fineCalculator")} />
 
       <div className="mx-auto w-full max-w-xl flex-1 px-4 py-4">
-        <div className="mb-4 flex items-center gap-2 rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-200">
-          <AlertTriangle className="h-4 w-4 shrink-0" aria-hidden="true" />
-          <span>{t("fineDisclaimer")}</span>
+        <div className="mb-4 flex flex-col gap-1.5 rounded-lg bg-amber-50 p-3 text-xs text-amber-800 dark:bg-amber-950/30 dark:text-amber-200">
+          <div className="flex items-center gap-2 font-semibold">
+            <AlertTriangle className="h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" aria-hidden="true" />
+            <span>{t("disclaimerTitle")}</span>
+          </div>
+          <p className="leading-normal">{t("disclaimerText")}</p>
         </div>
 
         <h2 className="mb-3 text-lg font-bold text-foreground">{t("selectViolation")}</h2>
@@ -65,73 +68,101 @@ function FineCalculatorPage() {
           {VIOLATIONS.map((v) => {
             const isActive = selected === v.id;
             return (
-              <button
-                key={v.id}
-                onClick={() => setSelected(v.id)}
-                className={`flex items-center justify-between rounded-xl border p-4 text-left transition-all ${
-                  isActive
-                    ? "border-primary bg-primary/5 shadow-sm ring-1 ring-primary"
-                    : "border-border bg-card hover:bg-accent"
-                }`}
-                aria-pressed={isActive}
-              >
-                <div className="flex items-center gap-3">
-                  <div
-                    className={`flex h-10 w-10 items-center justify-center rounded-lg ${
-                      isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
-                    }`}
-                  >
-                    <ViolationIcon type={v.icon} />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">{t(v.id)}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {t("fine")}: ₹{v.fine.toLocaleString("en-IN")}
-                    </p>
-                  </div>
-                </div>
-                <ChevronRight
-                  className={`h-5 w-5 shrink-0 transition-transform ${
-                    isActive ? "rotate-90 text-primary" : "text-muted-foreground"
+              <div key={v.id} className="flex flex-col gap-2">
+                <button
+                  onClick={() => setSelected(isActive ? null : v.id)}
+                  className={`flex items-center justify-between rounded-xl border p-4 text-left transition-all ${
+                    isActive
+                      ? "border-primary bg-primary/5 shadow-sm ring-1 ring-primary"
+                      : "border-border bg-card hover:bg-accent"
                   }`}
-                  aria-hidden="true"
-                />
-              </button>
+                  aria-pressed={isActive}
+                >
+                  <div className="flex items-center gap-3">
+                    <div
+                      className={`flex h-10 w-10 items-center justify-center rounded-lg ${
+                        isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                      }`}
+                    >
+                      <ViolationIcon type={v.icon} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">{t(v.id)}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {t("fine")}: ₹{v.fine.toLocaleString("en-IN")}
+                      </p>
+                    </div>
+                  </div>
+                  <ChevronRight
+                    className={`h-5 w-5 shrink-0 transition-transform ${
+                      isActive ? "rotate-90 text-primary" : "text-muted-foreground"
+                    }`}
+                    aria-hidden="true"
+                  />
+                </button>
+
+                {isActive && (
+                  <Card className="border-primary/20 bg-primary/5 animate-slide-up">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="flex items-center gap-2 text-base">
+                        <Calculator className="h-5 w-5 text-primary" aria-hidden="true" />
+                        {t("fineDetails")}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="flex items-center gap-2">
+                        <IndianRupee className="h-5 w-5 text-primary" aria-hidden="true" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">{t("expectedFine")}</p>
+                          <p className="text-2xl font-bold text-foreground">
+                            ₹{v.fine.toLocaleString("en-IN")}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="rounded-lg bg-card p-3 text-sm text-foreground">
+                        <p className="font-semibold mb-1">{t("explanation")}</p>
+                        <p className="text-muted-foreground leading-relaxed">{t(`${v.id}_desc`)}</p>
+                      </div>
+
+                      <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-200">
+                        <p className="font-semibold mb-1">{t("legalReference")}</p>
+                        <p className="leading-relaxed">{t(`${v.id}_legal`)}</p>
+                      </div>
+
+                      <div className="pt-2 text-center border-t border-border/50">
+                        <a
+                          href="https://mvd.kerala.gov.in/en/road_safety"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-xs font-semibold text-primary hover:underline"
+                        >
+                          <span>{t("visitOfficialMVD")}</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="h-3 w-3"
+                          >
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                          </svg>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
             );
           })}
         </div>
-
-        {selectedViolation && (
-          <Card className="mt-6 border-primary/20 bg-primary/5">
-            <CardHeader className="pb-2">
-              <CardTitle className="flex items-center gap-2 text-base">
-                <Calculator className="h-5 w-5 text-primary" aria-hidden="true" />
-                {t("fineDetails")}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center gap-2">
-                <IndianRupee className="h-5 w-5 text-primary" aria-hidden="true" />
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("expectedFine")}</p>
-                  <p className="text-2xl font-bold text-foreground">
-                    ₹{selectedViolation.fine.toLocaleString("en-IN")}
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-lg bg-card p-3 text-sm text-foreground">
-                <p className="font-semibold mb-1">{t("explanation")}</p>
-                <p className="text-muted-foreground leading-relaxed">{t(`${selectedViolation.id}_desc`)}</p>
-              </div>
-
-              <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-200">
-                <p className="font-semibold mb-1">{t("legalReference")}</p>
-                <p className="leading-relaxed">{t(`${selectedViolation.id}_legal`)}</p>
-              </div>
-            </CardContent>
-          </Card>
-        )}
       </div>
     </div>
   );
