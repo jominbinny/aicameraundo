@@ -1,5 +1,9 @@
 node_modules
 dist
 .netlify
+.output
+.tanstack
+.vercel
 .env
 .env.*
+
