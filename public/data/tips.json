@@ -1,0 +1,92 @@
+[
+  {
+    "id": "helmet_strap",
+    "category": "Helmet",
+    "title_en": "Fasten the Helmet Chin Strap",
+    "title_ml": "ഹെൽമറ്റ് സ്ട്രാപ്പ് ധരിക്കുക",
+    "content_en": "Wearing a helmet without fastening the chin strap is as good as not wearing one. During an impact, an unfastened helmet will fly off your head, leaving you unprotected. Always double-check and secure the strap.",
+    "content_ml": "സ്ട്രാപ്പ് ധരിക്കാതെ ഹെൽമറ്റ് ഉപയോഗിക്കുന്നത് ഒട്ടും സുരക്ഷിതമല്ല. ഒരു വീഴ്ചയോ അപകടമോ ഉണ്ടായാൽ ഹെൽമറ്റ് തലയിൽ നിന്ന് ഊരിപ്പോകാൻ ഇത് കാരണമാകും. സ്ട്രാപ്പ് ശരിയായി ഘടിപ്പിച്ചിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.",
+    "icon": "Helmet"
+  },
+  {
+    "id": "pillion_safety",
+    "category": "Helmet",
+    "title_en": "Safety for the Pillion Rider",
+    "title_ml": "പിന്നിലിരിക്കുന്നയാളുടെ സുരക്ഷ",
+    "content_en": "Kerala motor vehicle rules mandate that both the rider and the pillion passenger must wear approved helmets. Head injuries affect pillion riders just as severely in collisions. Ensure a second helmet is always ready.",
+    "content_ml": "ഇരുചക്ര വാഹനങ്ങളിൽ യാത്ര ചെയ്യുന്ന രണ്ടുപേരും ഹെൽമറ്റ് ധരിക്കേണ്ടത് നിയമപരമായി നിർബന്ധമാണ്. അപകടങ്ങളിൽ പിന്നിലിരിക്കുന്നയാൾക്കും തുല്യ പരിക്കേൽക്കാൻ സാധ്യതയുണ്ട്. അതിനാൽ രണ്ടുപേരും ഹെൽമറ്റ് ധരിക്കുക.",
+    "icon": "Users"
+  },
+  {
+    "id": "seatbelt_rear",
+    "category": "Seatbelt",
+    "title_en": "Rear Seats Need Seatbelts Too",
+    "title_ml": "പിൻസീറ്റിലെ യാത്രക്കാരും ബെൽറ്റ് ധരിക്കണം",
+    "content_en": "Many passengers neglect wearing seatbelts when sitting in the rear. In a head-on collision, unbelted rear passengers can be thrown forward, severely injuring front-seat occupants and themselves. Click every seatbelt.",
+    "content_ml": "കാറുകളുടെ പിൻസീറ്റിലിരിക്കുന്നവരും നിർബന്ധമായും സീറ്റ് ബെൽറ്റ് ധരിക്കണം. വലിയ അപകടങ്ങളിൽ പിൻസീറ്റിലുള്ളവർ മുന്നിലേക്ക് തെറിച്ച് വീഴുന്നത് ഒഴിവാക്കാനും ഇത് അത്യന്താപേക്ഷിതമാണ്.",
+    "icon": "ShieldAlert"
+  },
+  {
+    "id": "child_lock_safety",
+    "category": "Seatbelt",
+    "title_en": "Child Safety Seats and Locks",
+    "title_ml": "കുട്ടികളുടെ സുരക്ഷയും ചൈൽഡ് ലോക്കും",
+    "content_en": "Always secure children under 12 in the rear seat with appropriate child restraints or booster seats. Activate the child safety locks on the rear doors to prevent accidental opening during trips.",
+    "content_ml": "12 വയസ്സിൽ താഴെയുള്ള കുട്ടികളെ കാറിന്റെ പിൻസീറ്റിൽ ഇരുത്തി ബെൽറ്റോ ചൈൽഡ് സീറ്റോ ധരിപ്പിക്കുക. കുട്ടികൾ വാതിൽ അബദ്ധത്തിൽ തുറക്കാതിരിക്കാൻ ചൈൽഡ് ലോക്ക് സംവിധാനം പ്രവർത്തിപ്പിക്കുക.",
+    "icon": "Lock"
+  },
+  {
+    "id": "low_beam_fog",
+    "category": "Night Driving",
+    "title_en": "Use Low Beams in Fog and Glare",
+    "title_ml": "രാത്രിയിൽ ലോ ബീം ഉപയോഗിക്കുക",
+    "content_en": "High beams blind oncoming drivers and can cause fatal head-on crashes. Switch to low beams when a vehicle approaches from the opposite direction or when driving in urban and well-lit areas.",
+    "content_ml": "എതിർദിശയിൽ നിന്ന് വാഹനം വരുമ്പോൾ ഹൈ ബീം ലൈറ്റുകൾ ഉപയോഗിക്കുന്നത് തടയുക. ഇത് അവരുടെ കാഴ്ചയെ മറയ്ക്കും. നഗരങ്ങളിലും ലൈറ്റുകൾ ഉള്ള റോഡുകളിലും ഡിം/ലോ ബീം ലൈറ്റുകൾ ഉപയോഗിക്കുക.",
+    "icon": "Eye"
+  },
+  {
+    "id": "windshield_glare",
+    "category": "Night Driving",
+    "title_en": "Keep Windshields Clean to Avoid Glare",
+    "title_ml": "ഗ്ലാസുകൾ വൃത്തിയായി സൂക്ഷിക്കുക",
+    "content_en": "A dirty windshield scatters oncoming headlights, intensifying glare and severely reducing your visibility at night. Clean the inside and outside of your windshield before embarking on night trips.",
+    "content_ml": "രാത്രിയിൽ സുഗമമായ കാഴ്ച ലഭിക്കുന്നതിനായി വിൻഡ്ഷീൽഡിലെ പൊടിയും അഴുക്കും നീക്കം ചെയ്യുക. ഇത് എതിർദിശയിൽ നിന്നുള്ള ലൈറ്റുകളുടെ തിളക്കം അനാവശ്യമായി ചിതറുന്നത് കുറയ്ക്കും.",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "monsoon_slippery",
+    "category": "Rain Driving",
+    "title_en": "Watch Out for Monsoon Hydroplaning",
+    "title_ml": "മഴക്കാലത്തെ വഴുക്കൽ (ഹൈഡ്രോപ്ലാനിംഗ്)",
+    "content_en": "During heavy rains in Kerala, water accumulation on roads causes tires to lose contact with the road surface, leading to sliding (hydroplaning). Reduce speed by at least 20-30% and avoid sudden braking.",
+    "content_ml": "കനത്ത മഴയിൽ റോഡിൽ വെള്ളം കെട്ടിക്കിടക്കുമ്പോൾ ടയറുകൾക്ക് റോഡുമായുള്ള ഗ്രിപ്പ് നഷ്ടപ്പെടാം. അതിനാൽ വാഹനത്തിന്റെ വേഗത 20-30% വരെ കുറച്ച് സുരക്ഷിതമായ അകലം പാലിക്കുക.",
+    "icon": "CloudRain"
+  },
+  {
+    "id": "tyre_tread_check",
+    "category": "Rain Driving",
+    "title_en": "Maintain Tyre Tread Depth for Rains",
+    "title_ml": "ടയറിന്റെ തേയ്മാനം പരിശോധിക്കുക",
+    "content_en": "Worn-out tires cannot disperse water effectively, making your car highly prone to skidding in the rain. Check tyre tread depth regularly and replace tires when the tread is below 1.6mm.",
+    "content_ml": "തേയ്മാനം വന്ന ടയറുകൾ മഴവെള്ളത്തെ ശരിയായി പുറന്തള്ളാൻ സഹായിക്കില്ല. ഇത് വാഹനം തെന്നിപ്പോകുന്നതിലേക്ക് നയിക്കും. മഴക്കാലത്തിന് മുമ്പ് തന്നെ ടയർ സുരക്ഷ ഉറപ്പാക്കുക.",
+    "icon": "RefreshCw"
+  },
+  {
+    "id": "three_second_rule",
+    "category": "Highway Driving",
+    "title_en": "Follow the Three-Second Distance Rule",
+    "title_ml": "3 സെക്കൻഡ് നിയമം പാലിക്കുക",
+    "content_en": "Maintain a safe gap between your vehicle and the one ahead. Choose a stationary object on the roadside; when the vehicle ahead passes it, count to three. You should not pass the object before reaching three.",
+    "content_ml": "മുന്നിലുള്ള വാഹനവുമായി കൃത്യമായ അകലം പാലിക്കുക. ഒരു നിശ്ചിത അടയാളം അടിസ്ഥാനമാക്കി 3 സെക്കൻഡ് വ്യത്യാസം വാഹനങ്ങൾ തമ്മിലുണ്ടെന്ന് ഉറപ്പാക്കുക. അടിയന്തര സാഹചര്യത്തിൽ ബ്രേക്ക് ചെയ്യാൻ ഇത് സഹായിക്കും.",
+    "icon": "Clock"
+  },
+  {
+    "id": "blind_spot_warning",
+    "category": "Highway Driving",
+    "title_en": "Check Blind Spots Before Changing Lanes",
+    "title_ml": "ലൈൻ മാറുമ്പോൾ അന്ധ മേഖലകൾ ശ്രദ്ധിക്കുക",
+    "content_en": "Mirrors don't show everything. Always do a quick shoulder check to cover your blind spots before changing lanes or turning on highways. Always use indicator signals well in advance.",
+    "content_en": "കണ്ണാടികൾക്ക് പുറമെ അന്ധ മേഖലകളും (ബ്ലൈൻഡ് സ്പോട്ടുകൾ) ഉണ്ടെന്ന് മനസ്സിലാക്കുക. തിരിയുന്നതിനോ ലൈൻ മാറുന്നതിനോ മുമ്പ് ഇൻഡിക്കേറ്റർ ഇട്ട ശേഷം ശ്രദ്ധയോടെ തിരിയുക.",
+    "icon": "ArrowLeftRight"
+  }
+]

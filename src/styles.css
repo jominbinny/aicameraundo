@@ -1,5 +1,4 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -12,13 +11,12 @@
  *
  * The :root and .dark blocks define the actual color values using oklch.
  * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
  */
 
 @theme inline {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: "Outfit", system-ui, -apple-system, sans-serif;
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,27 +61,34 @@
 }
 
 :root {
-  --radius: 1rem;
-  --background: oklch(0.985 0.005 160);
-  --foreground: oklch(0.18 0.03 165);
+  --radius: 1.125rem;
+  
+  /* Modern clean color variables (OKLCH) */
+  --background: oklch(0.99 0.003 160);
+  --foreground: oklch(0.15 0.02 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.03 165);
+  --card-foreground: oklch(0.15 0.02 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.03 165);
-  --primary: oklch(0.58 0.15 162);
-  --primary-foreground: oklch(0.99 0.01 160);
-  --primary-glow: oklch(0.7 0.16 160);
-  --secondary: oklch(0.95 0.02 160);
-  --secondary-foreground: oklch(0.25 0.04 165);
-  --muted: oklch(0.95 0.01 160);
-  --muted-foreground: oklch(0.5 0.03 165);
-  --accent: oklch(0.92 0.05 165);
-  --accent-foreground: oklch(0.25 0.04 165);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --popover-foreground: oklch(0.15 0.02 240);
+  
+  /* Safer/vibrant safe-drive primary green */
+  --primary: oklch(0.55 0.14 158);
+  --primary-foreground: oklch(0.99 0.005 160);
+  --primary-glow: oklch(0.65 0.13 158);
+  
+  --secondary: oklch(0.96 0.01 240);
+  --secondary-foreground: oklch(0.25 0.02 240);
+  --muted: oklch(0.96 0.01 240);
+  --muted-foreground: oklch(0.52 0.02 240);
+  --accent: oklch(0.93 0.03 158);
+  --accent-foreground: oklch(0.2 0.08 158);
+  --destructive: oklch(0.6 0.18 28);
+  --destructive-foreground: oklch(0.99 0.003 28);
+  
+  --border: oklch(0.91 0.01 240);
+  --input: oklch(0.91 0.01 240);
+  --ring: oklch(0.55 0.14 158 / 30%);
+  
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -100,26 +105,30 @@
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.7 0.16 160);
-  --primary-foreground: oklch(0.16 0.03 165);
-  --primary-glow: oklch(0.8 0.15 160);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
+  --background: oklch(0.12 0.015 240);
+  --foreground: oklch(0.97 0.01 240);
+  --card: oklch(0.16 0.015 240);
+  --card-foreground: oklch(0.97 0.01 240);
+  --popover: oklch(0.16 0.015 240);
+  --popover-foreground: oklch(0.97 0.01 240);
+  
+  --primary: oklch(0.68 0.13 158);
+  --primary-foreground: oklch(0.12 0.015 240);
+  --primary-glow: oklch(0.78 0.12 158);
+  
+  --secondary: oklch(0.22 0.015 240);
+  --secondary-foreground: oklch(0.97 0.01 240);
+  --muted: oklch(0.22 0.015 240);
+  --muted-foreground: oklch(0.65 0.01 240);
+  --accent: oklch(0.22 0.04 158);
+  --accent-foreground: oklch(0.85 0.08 158);
+  --destructive: oklch(0.58 0.17 28);
+  --destructive-foreground: oklch(0.99 0.003 28);
+  
+  --border: oklch(0.24 0.015 240 / 70%);
+  --input: oklch(0.24 0.015 240 / 70%);
+  --ring: oklch(0.68 0.13 158 / 40%);
+  
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -143,13 +152,22 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
 /* ============ App-specific design system ============ */
 @theme inline {
-  --animate-fade-in: fade-in 0.4s ease-out;
-  --animate-slide-up: slide-up 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-in: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slide-up: slide-up 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fade-in {
@@ -157,12 +175,12 @@
   to { opacity: 1; }
 }
 @keyframes slide-up {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 @keyframes pulse-soft {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  50% { opacity: 0.6; }
 }
 
 @utility gradient-primary {
@@ -171,15 +189,26 @@
 
 @utility skeleton {
   background-color: var(--muted);
-  animation: pulse-soft 1.4s ease-in-out infinite;
+  animation: pulse-soft 1.8s ease-in-out infinite;
 }
 
-/* Leaflet must sit below sticky app chrome */
+/* Glassmorphism utility */
+@utility glassmorphic {
+  background-color: color-mix(in srgb, var(--color-card) 75%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+/* Leaflet map styles */
 .leaflet-container {
   font-family: inherit;
   z-index: 0;
 }
 .leaflet-popup-content-wrapper {
   border-radius: var(--radius);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-html, body { height: 100%; }
+
+html, body {
+  height: 100%;
+}

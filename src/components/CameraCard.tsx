@@ -1,11 +1,25 @@
-// Reusable camera card with optional distance + actions.
 import { MapPin, Navigation } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { formatDistance } from "@/utils/distance";
 
-export default function CameraCard(props) {
-  const { camera, onShowOnMap = null, action = null } = props;
+interface CameraCardProps {
+  camera: {
+    id: number;
+    uniqueId?: string;
+    name?: string;
+    district?: string;
+    lat: number;
+    lng: number;
+    type?: string;
+    distanceKm?: number;
+  };
+  onShowOnMap?: (camera: any) => void;
+  action?: React.ReactNode;
+}
+
+export default function CameraCard({ camera, onShowOnMap, action }: CameraCardProps) {
   const { t } = useLanguage();
+
   return (
     <article className="flex items-start gap-3 rounded-2xl border border-border bg-card p-4 shadow-sm transition-shadow hover:shadow-md">
       <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-primary">

@@ -1,8 +1,19 @@
-// Generic empty / error state.
-import { SearchX } from "lucide-react";
+import { SearchX, LucideIcon } from "lucide-react";
+import React from "react";
 
-export default function EmptyState(props) {
-  const { icon: Icon = SearchX, title, description = null, action = null } = props;
+interface EmptyStateProps {
+  icon?: LucideIcon | React.ComponentType<any>;
+  title: string;
+  description?: string | null;
+  action?: React.ReactNode;
+}
+
+export default function EmptyState({
+  icon: Icon = SearchX,
+  title,
+  description = null,
+  action = null,
+}: EmptyStateProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted text-muted-foreground">

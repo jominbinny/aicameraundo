@@ -9,15 +9,30 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SafetyTipsRouteImport } from './routes/safety-tips'
 import { Route as RouteCheckerRouteImport } from './routes/route-checker'
+import { Route as RoadSignsRouteImport } from './routes/road-signs'
 import { Route as NearMeRouteImport } from './routes/near-me'
 import { Route as MapRouteImport } from './routes/map'
+import { Route as LearnersLicenseRouteImport } from './routes/learners-license'
 import { Route as FineCalculatorRouteImport } from './routes/fine-calculator'
+import { Route as EmergencyRouteImport } from './routes/emergency'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SafetyTipsRoute = SafetyTipsRouteImport.update({
+  id: '/safety-tips',
+  path: '/safety-tips',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RouteCheckerRoute = RouteCheckerRouteImport.update({
   id: '/route-checker',
   path: '/route-checker',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoadSignsRoute = RoadSignsRouteImport.update({
+  id: '/road-signs',
+  path: '/road-signs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NearMeRoute = NearMeRouteImport.update({
@@ -30,9 +45,24 @@ const MapRoute = MapRouteImport.update({
   path: '/map',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LearnersLicenseRoute = LearnersLicenseRouteImport.update({
+  id: '/learners-license',
+  path: '/learners-license',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FineCalculatorRoute = FineCalculatorRouteImport.update({
   id: '/fine-calculator',
   path: '/fine-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyRoute = EmergencyRouteImport.update({
+  id: '/emergency',
+  path: '/emergency',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -43,55 +73,114 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/emergency': typeof EmergencyRoute
   '/fine-calculator': typeof FineCalculatorRoute
+  '/learners-license': typeof LearnersLicenseRoute
   '/map': typeof MapRoute
   '/near-me': typeof NearMeRoute
+  '/road-signs': typeof RoadSignsRoute
   '/route-checker': typeof RouteCheckerRoute
+  '/safety-tips': typeof SafetyTipsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/emergency': typeof EmergencyRoute
   '/fine-calculator': typeof FineCalculatorRoute
+  '/learners-license': typeof LearnersLicenseRoute
   '/map': typeof MapRoute
   '/near-me': typeof NearMeRoute
+  '/road-signs': typeof RoadSignsRoute
   '/route-checker': typeof RouteCheckerRoute
+  '/safety-tips': typeof SafetyTipsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/emergency': typeof EmergencyRoute
   '/fine-calculator': typeof FineCalculatorRoute
+  '/learners-license': typeof LearnersLicenseRoute
   '/map': typeof MapRoute
   '/near-me': typeof NearMeRoute
+  '/road-signs': typeof RoadSignsRoute
   '/route-checker': typeof RouteCheckerRoute
+  '/safety-tips': typeof SafetyTipsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/fine-calculator' | '/map' | '/near-me' | '/route-checker'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/emergency'
+    | '/fine-calculator'
+    | '/learners-license'
+    | '/map'
+    | '/near-me'
+    | '/road-signs'
+    | '/route-checker'
+    | '/safety-tips'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/fine-calculator' | '/map' | '/near-me' | '/route-checker'
+  to:
+    | '/'
+    | '/about'
+    | '/emergency'
+    | '/fine-calculator'
+    | '/learners-license'
+    | '/map'
+    | '/near-me'
+    | '/road-signs'
+    | '/route-checker'
+    | '/safety-tips'
   id:
     | '__root__'
     | '/'
+    | '/about'
+    | '/emergency'
     | '/fine-calculator'
+    | '/learners-license'
     | '/map'
     | '/near-me'
+    | '/road-signs'
     | '/route-checker'
+    | '/safety-tips'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  EmergencyRoute: typeof EmergencyRoute
   FineCalculatorRoute: typeof FineCalculatorRoute
+  LearnersLicenseRoute: typeof LearnersLicenseRoute
   MapRoute: typeof MapRoute
   NearMeRoute: typeof NearMeRoute
+  RoadSignsRoute: typeof RoadSignsRoute
   RouteCheckerRoute: typeof RouteCheckerRoute
+  SafetyTipsRoute: typeof SafetyTipsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/safety-tips': {
+      id: '/safety-tips'
+      path: '/safety-tips'
+      fullPath: '/safety-tips'
+      preLoaderRoute: typeof SafetyTipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/route-checker': {
       id: '/route-checker'
       path: '/route-checker'
       fullPath: '/route-checker'
       preLoaderRoute: typeof RouteCheckerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/road-signs': {
+      id: '/road-signs'
+      path: '/road-signs'
+      fullPath: '/road-signs'
+      preLoaderRoute: typeof RoadSignsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/near-me': {
@@ -108,11 +197,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MapRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/learners-license': {
+      id: '/learners-license'
+      path: '/learners-license'
+      fullPath: '/learners-license'
+      preLoaderRoute: typeof LearnersLicenseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fine-calculator': {
       id: '/fine-calculator'
       path: '/fine-calculator'
       fullPath: '/fine-calculator'
       preLoaderRoute: typeof FineCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency': {
+      id: '/emergency'
+      path: '/emergency'
+      fullPath: '/emergency'
+      preLoaderRoute: typeof EmergencyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -127,10 +237,15 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  EmergencyRoute: EmergencyRoute,
   FineCalculatorRoute: FineCalculatorRoute,
+  LearnersLicenseRoute: LearnersLicenseRoute,
   MapRoute: MapRoute,
   NearMeRoute: NearMeRoute,
+  RoadSignsRoute: RoadSignsRoute,
   RouteCheckerRoute: RouteCheckerRoute,
+  SafetyTipsRoute: SafetyTipsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

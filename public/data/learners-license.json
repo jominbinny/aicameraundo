@@ -1,0 +1,114 @@
+[
+  {
+    "id": "eligibility",
+    "title_en": "Eligibility Criteria",
+    "title_ml": "യോഗ്യതാ മാനദണ്ഡങ്ങൾ",
+    "items_en": [
+      "Age of 16 years: To apply for a licence to drive a motor cycle without gear (engine capacity not exceeding 50cc), with parental consent.",
+      "Age of 18 years: To apply for a licence to drive light motor vehicles (cars, motorcycles with gear, scooters).",
+      "Age of 20 years: To apply for a licence to drive a transport vehicle (commercial trucks, buses, taxis).",
+      "Mental & Physical Fitness: The applicant must be of sound health and have normal vision. Form 1 (Self Declaration) is required for non-transport, and Form 1A (Medical Certificate) is required for applicants above 40 years or transport category."
+    ],
+    "items_ml": [
+      "16 വയസ്സ് പൂർത്തിയായവർക്ക്: ഗിയറില്ലാത്ത ഇരുചക്ര വാഹനങ്ങൾ ഓടിക്കുന്നതിനുള്ള ലൈസൻസിന് (രക്ഷാകർത്താക്കളുടെ സമ്മതത്തോടെ).",
+      "18 വയസ്സ് പൂർത്തിയായവർക്ക്: ഗിയറുള്ള ഇരുചക്ര വാഹനങ്ങളും കാറുകളും ഓടിക്കുന്നതിനുള്ള ലൈസൻസിന്.",
+      "20 വയസ്സ് പൂർത്തിയായവർക്ക്: ട്രാൻസ്പോർട്ട് വാഹനങ്ങൾ (ടാക്സി, ബസ്, ലോറി) ഓടിക്കുന്നതിനുള്ള ലൈസൻസിന്.",
+      "ശാരീരിക യോഗ്യത: അപേക്ഷകൻ നല്ല ആരോഗ്യവാനും കാഴ്ചശക്തിയുള്ളവനുമായിരിക്കണം. 40 വയസ്സിന് മുകളിലുള്ളവർക്കും ട്രാൻസ്പോർട്ട് വിഭാഗത്തിനും മെഡിക്കൽ സർട്ടിഫിക്കറ്റ് (Form 1A) നിർബന്ധമാണ്."
+    ]
+  },
+  {
+    "id": "documents",
+    "title_en": "Required Documents",
+    "title_ml": "ആവശ്യമായ രേഖകൾ",
+    "items_en": [
+      "Proof of Age: SSLC Book, Passport, Birth Certificate, or Aadhaar Card.",
+      "Proof of Address: Aadhaar Card, Voters ID, Passport, LIC Policy, or Utility bills (Electricity/Water/Gas).",
+      "Passport Size Photographs: Recent passport-size color photographs.",
+      "Medical Certificate: Form 1A signed by a registered government medical practitioner (mandatory for applicants above 40 years or transport vehicle licence).",
+      "Parental Consent Form: Required if the applicant is between 16 and 18 years old."
+    ],
+    "items_ml": [
+      "വയസ്സ് തെളിയിക്കുന്ന രേഖ: എസ്.എസ്.എൽ.സി ബുക്ക്, പാസ്പോർട്ട്, ജനന സർട്ടിഫിക്കറ്റ്, അല്ലെങ്കിൽ ആധാർ കാർഡ്.",
+      "മേൽവിലാസം തെളിയിക്കുന്ന രേഖ: ആധാർ കാർഡ്, വോട്ടർ ഐ.ഡി, പാസ്‌പോർട്ട്, അല്ലെങ്കിൽ യൂട്ടിലിറ്റി ബില്ലുകൾ.",
+      "പാസ്‌പോർട്ട് സൈസ് ഫോട്ടോകൾ: അടുത്തകാലത്തെടുത്ത കളർ ഫോട്ടോകൾ.",
+      "മെഡിക്കൽ സർട്ടിഫിക്കറ്റ്: 40 വയസ്സ് കഴിഞ്ഞവർക്കും ട്രാൻസ്പോർട്ട് ലൈസൻസിനും സർക്കാർ അംഗീകൃത ഡോക്ടർ ഒപ്പിട്ട ഫോം 1A.",
+      "രക്ഷാകർത്താവിന്റെ സമ്മതപത്രം: 16-നും 18-നും ഇടയിൽ പ്രായമുള്ളവർക്ക് മാത്രം."
+    ]
+  },
+  {
+    "id": "process",
+    "title_en": "Application Process",
+    "title_ml": "അപേക്ഷാ നടപടികൾ",
+    "items_en": [
+      "Step 1: Visit the official Sarathi portal (sarathi.parivahan.gov.in) and select 'Kerala'.",
+      "Step 2: Click on 'Apply for Learner Licence' and fill out the applicant details.",
+      "Step 3: Upload the scanned copies of required documents (Age proof, Address proof, etc.).",
+      "Step 4: Upload your photo and signature (in specified dimensions).",
+      "Step 5: Pay the application fee online using net banking, debit card, or UPI.",
+      "Step 6: Book a slot for the online Learner's Licence Test (many sub-offices now support contactless online tests from home via Aadhaar authentication).",
+      "Step 7: Pass the online test (answering questions on road signs and traffic rules). Once passed, you can immediately download your Learner's Licence."
+    ],
+    "items_ml": [
+      "ഘട്ടം 1: ഔദ്യോഗിക സാരഥി പോർട്ടൽ (sarathi.parivahan.gov.in) സന്ദർശിച്ച് 'Kerala' തിരഞ്ഞെടുക്കുക.",
+      "ഘട്ടം 2: 'Apply for Learner Licence' ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് വിവരങ്ങൾ പൂരിപ്പിക്കുക.",
+      "ഘട്ടം 3: ആവശ്യമായ രേഖകൾ (വയസ്സ്, വിലാസം തെളിയിക്കുന്നവ) സ്കാൻ ചെയ്ത് അപ്‌ലോഡ് ചെയ്യുക.",
+      "ഘട്ടം 4: ഫോട്ടോയും ഒപ്പും അപ്‌ലോഡ് ചെയ്യുക.",
+      "ഘട്ടം 5: നെറ്റ് ബാങ്കിംഗ്, ഡെബിറ്റ് കാർഡ്, അല്ലെങ്കിൽ യു.പി.ഐ വഴി ഓൺലൈനായി ഫീസ് അടയ്ക്കുക.",
+      "ഘട്ടം 6: ഓൺലൈൻ ടെസ്റ്റിനായി സ്ലോട്ട് ബുക്ക് ചെയ്യുക (ആധാർ വിവരങ്ങൾ നൽകിയാൽ വീട്ടിലിരുന്ന് തന്നെ പരീക്ഷ എഴുതാം).",
+      "ഘട്ടം 7: പരീക്ഷ വിജയിച്ചാൽ (റോഡ് നിയമങ്ങൾ, ചിഹ്നങ്ങൾ എന്നിവയെക്കുറിച്ചുള്ള ചോദ്യങ്ങൾ) ഉടൻ തന്നെ ലൈസൻസ് ഡൗൺലോഡ് ചെയ്യാം."
+    ]
+  },
+  {
+    "id": "fees",
+    "title_en": "Fee Structure",
+    "title_ml": "ഫീസ് ഘടന",
+    "items_en": [
+      "Application & Test Fee: ₹150 for each class of vehicle (e.g., Motorcycle with gear).",
+      "Learner's Licence Issue Fee: ₹150.",
+      "Online Test Fee: ₹50.",
+      "Retest Fee (if failed): ₹50 per attempt.",
+      "Note: Total expected fee for a single class of vehicle (e.g., MCWG only) is approximately ₹230-₹300. Combined LMV and MCWG will be around ₹480-₹550."
+    ],
+    "items_ml": [
+      "അപേക്ഷാ & പരീക്ഷാ ഫീസ്: ഓരോ തരം വാഹനത്തിനും ₹150 (ഉദാ: ഗിയറുള്ള ഇരുചക്ര വാഹനം).",
+      "ലൈസൻസ് ഇഷ്യൂ ഫീസ്: ₹150.",
+      "ഓൺലൈൻ ടെസ്റ്റ് ഫീസ്: ₹50.",
+      "പരാജയപ്പെട്ടാൽ വീണ്ടും പരീക്ഷ എഴുതാൻ: ₹50.",
+      "ശ്രദ്ധിക്കുക: ഒരു തരം വാഹനത്തിന് ആകെ ഫീസ് ഏകദേശം ₹230-₹300 വരും. ഇരുചക്ര വാഹനവും കാറും ഒന്നിച്ച് അപേക്ഷിച്ചാൽ ₹480-₹550 വരും."
+    ]
+  },
+  {
+    "id": "validity",
+    "title_en": "Validity & Driving Rules",
+    "title_ml": "സാധുതയും ഡ്രൈവിംഗ് നിയമങ്ങളും",
+    "items_en": [
+      "Validity Period: A Learner's Licence is valid for exactly 6 months (180 days) from the date of issue.",
+      "Permanent Licence Wait: You can apply for a permanent driving licence 30 days after the issue of your Learner's Licence.",
+      "L-Plate Requirement: You must display an 'L' plate (red letter 'L' on a white background) at the front and back of the vehicle you are driving.",
+      "Supervisor Companion: When driving, you must be accompanied by an instructor/friend who holds a valid permanent driving licence for that category, sitting in a position to control the vehicle (usually the passenger seat)."
+    ],
+    "items_ml": [
+      "സാധുത കാലയളവ്: ലേണേഴ്സ് ലൈസൻസിന് ഇഷ്യൂ ചെയ്ത തീയതി മുതൽ കൃത്യം 6 മാസം (180 ദിവസം) കാലാവധിയുണ്ടാകും.",
+      "സ്ഥിരം ലൈസൻസ് അപേക്ഷ: ലേണേഴ്സ് ലൈസൻസ് ലഭിച്ച് 30 ദിവസത്തിന് ശേഷം സ്ഥിരം ലൈസൻസിന് അപേക്ഷിക്കാം.",
+      "L-ബോർഡ് നിർബന്ധം: വാഹനം ഓടിക്കുമ്പോൾ അതിന്റെ മുന്നിലും പിന്നിലും ചുവപ്പ് നിറത്തിലുള്ള 'L' ബോർഡ് വെച്ചിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.",
+      "സഹയാത്രികൻ: അതാത് വിഭാഗത്തിൽ സാധുവായ സ്ഥിരം ലൈസൻസുള്ള ഒരു വ്യക്തി വാഹനം നിയന്ത്രിക്കാൻ പാകത്തിൽ ഒപ്പമുണ്ടായിരിക്കണം."
+    ]
+  },
+  {
+    "id": "renewal",
+    "title_en": "Renewal & Expiry Information",
+    "title_ml": "നവീകരണവും കാലാവധി കഴിഞ്ഞാലുള്ള വിവരങ്ങളും",
+    "items_en": [
+      "No Direct Renewal: A Learner's Licence cannot be renewed or extended once it expires.",
+      "Fresh Application: If the 6-month validity expires before you pass the permanent driving test, you must apply for a fresh Learner's Licence from the beginning.",
+      "Fee Payment: You will have to pay the application fees and test fees again for the new Learner's Licence.",
+      "Test Waiver: In some instances, if you apply within a short period, you might be exempted from repeating the online computer test. Please check the local RTO guidelines."
+    ],
+    "items_ml": [
+      "നേരിട്ട് പുതുക്കാനാകില്ല: ലേണേഴ്സ് ലൈസൻസിന്റെ കാലാവധി നീട്ടാനോ നേരിട്ട് പുതുക്കാനോ സാധിക്കില്ല.",
+      "പുതിയ അപേക്ഷ: 6 മാസ കാലാവധി കഴിഞ്ഞാൽ ആദ്യ ഘട്ടം മുതൽ പുതിയ അപേക്ഷ സമർപ്പിക്കണം.",
+      "ഫീസ് വീണ്ടും അടയ്ക്കണം: പുതിയ അപേക്ഷയ്ക്ക് ഫീസും ഓൺലൈൻ പരീക്ഷാ ഫീസും വീണ്ടും അടയ്ക്കേണ്ടതുണ്ട്.",
+      "പരീക്ഷ ഒഴിവാക്കൽ: പരീക്ഷയിൽ പരാജയപ്പെടാത്ത സാഹചര്യത്തിൽ RTO നിബന്ധനകൾ പ്രകാരം ചിലപ്പോൾ വീണ്ടും കമ്പ്യൂട്ടർ പരീക്ഷ എഴുതേണ്ടതില്ല."
+    ]
+  }
+]

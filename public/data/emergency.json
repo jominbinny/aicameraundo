@@ -1,0 +1,47 @@
+[
+  {
+    "id": "police",
+    "name_en": "Police (Emergency Services)",
+    "name_ml": "പോലീസ് (അടിയന്തര സേവനം)",
+    "number": "112",
+    "description_en": "National Emergency Response System (NERS) for immediate police support, safety assistance, and accident reports.",
+    "description_ml": "ഉടൻ പോലീസ് സേവനം ലഭ്യമാകുന്നതിനും അപകട വിവരങ്ങൾ അറിയിക്കുന്നതിനുമുള്ള ഏകീകൃത നമ്പർ.",
+    "icon": "Shield"
+  },
+  {
+    "id": "ambulance",
+    "name_en": "Ambulance (Kanivu 108)",
+    "name_ml": "ആംബുലൻസ് (കനിവ് 108)",
+    "number": "108",
+    "description_en": "Free emergency ambulance and medical support service across Kerala, active 24/7.",
+    "description_ml": "അപകട സ്ഥലങ്ങളിൽ അടിയന്തര വൈദ്യസഹായവും ആംബുലൻസും ലഭ്യമാക്കുന്ന സൗജന്യ സർക്കാർ സേവനം.",
+    "icon": "HeartPulse"
+  },
+  {
+    "id": "fire_force",
+    "name_en": "Fire and Rescue Force",
+    "name_ml": "ഫയർ ആൻഡ് റെസ്ക്യൂ",
+    "number": "101",
+    "description_en": "Rescue operations in vehicle crashes, fuel leakage, vehicle fires, and flood-related highway emergencies.",
+    "description_ml": "തീപിടുത്തം, വാഹനാപകട രക്ഷാപ്രവർത്തനങ്ങൾ എന്നിവയ്ക്ക് ബന്ധപ്പെടുക.",
+    "icon": "Flame"
+  },
+  {
+    "id": "women_helpline",
+    "name_en": "Women Safety Helpline",
+    "name_ml": "വനിതാ ഹെൽപ്പ് ലൈൻ",
+    "number": "1091",
+    "description_en": "Dedicated round-the-clock helpline for women needing immediate safety assistance, counselling, or reporting harassment.",
+    "description_ml": "സ്ത്രീകളുടെ സുരക്ഷയ്ക്കും അടിയന്തര സഹായങ്ങൾക്കും വിളിക്കേണ്ട നമ്പർ.",
+    "icon": "UserCheck"
+  },
+  {
+    "id": "child_helpline",
+    "name_en": "Childline India",
+    "name_ml": "ചൈൽഡ് ലൈൻ ഹെൽപ്പ് ലൈൻ",
+    "number": "1098",
+    "description_en": "24-hour emergency phone outreach service for children in distress or reporting missing children on transit.",
+    "description_ml": "കുട്ടികളുടെ സുരക്ഷയ്ക്കും സഹായങ്ങൾക്കും വിളിക്കേണ്ട നമ്പർ.",
+    "icon": "Smile"
+  }
+]
