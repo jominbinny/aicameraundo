@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import PageHeader from "@/components/PageHeader";
 import SearchBar from "@/components/SearchBar";
 import SafetyTipCard from "@/components/ui/SafetyTipCard";
+import QuoteCard from "@/components/ui/QuoteCard";
 import LoadingState from "@/components/ui/LoadingState";
 import EmptyState from "@/components/EmptyState";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -32,22 +33,32 @@ interface SafetyTip {
   icon: string;
 }
 
+interface Quote {
+  id: string;
+  text_en: string;
+  text_ml: string;
+}
+
 function SafetyTipsPage() {
   const { t, lang } = useLanguage();
   const [tips, setTips] = useState<SafetyTip[]>([]);
+  const [quotes, setQuotes] = useState<Quote[]>([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
 
   useEffect(() => {
-    fetch("/data/tips.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTips(data);
+    Promise.all([
+      fetch("/data/tips.json").then((res) => res.json()),
+      fetch("/data/quotes.json").then((res) => res.json()),
+    ])
+      .then(([tipsData, quotesData]) => {
+        setTips(tipsData);
+        setQuotes(quotesData);
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Failed to load safety tips:", err);
+        console.error("Failed to load safety tips and quotes:", err);
         setLoading(false);
       });
   }, []);
@@ -89,6 +100,18 @@ function SafetyTipsPage() {
     return tips[index];
   }, [tips]);
 
+  // Determine a stable random "Quote of the Day" using date hash
+  const quoteOfTheDay = useMemo(() => {
+    if (!quotes.length) return null;
+    const dateString = new Date().toDateString();
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+      hash = dateString.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const index = (Math.abs(hash) + 3) % quotes.length;
+    return quotes[index];
+  }, [quotes]);
+
   return (
     <div className="flex min-h-[calc(100vh-4rem)] flex-col pb-8">
       <PageHeader subtitle={t("safetyTips")} />
@@ -114,7 +137,10 @@ function SafetyTipsPage() {
               <Sparkles className="h-4 w-4 animate-pulse" />
               <span>{t("tipOfTheDay")}</span>
             </div>
-            <SafetyTipCard tip={tipOfTheDay} />
+            <div className="flex flex-col gap-3.5">
+              <SafetyTipCard tip={tipOfTheDay} />
+              {quoteOfTheDay && <QuoteCard quote={quoteOfTheDay} />}
+            </div>
           </div>
         )}
 

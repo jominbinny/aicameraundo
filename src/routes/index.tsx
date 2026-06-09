@@ -20,6 +20,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { getCameraCount, getDistricts } from "@/services/cameraService";
 import FeatureCard from "@/components/ui/FeatureCard";
 import SafetyTipCard from "@/components/ui/SafetyTipCard";
+import QuoteCard from "@/components/ui/QuoteCard";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -64,24 +65,34 @@ interface SafetyTip {
   icon: string;
 }
 
+interface Quote {
+  id: string;
+  text_en: string;
+  text_ml: string;
+}
+
 function HomePage() {
   const { t } = useLanguage();
   const cameraCount = getCameraCount();
   const districtCount = getDistricts().filter(Boolean).length;
 
   const [tips, setTips] = useState<SafetyTip[]>([]);
+  const [quotes, setQuotes] = useState<Quote[]>([]);
   const [loadingTips, setLoadingTips] = useState(true);
 
-  // Fetch safety tips for the Tip of the Day widget
+  // Fetch safety tips and quotes for the widgets
   useEffect(() => {
-    fetch("/data/tips.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTips(data);
+    Promise.all([
+      fetch("/data/tips.json").then((res) => res.json()),
+      fetch("/data/quotes.json").then((res) => res.json()),
+    ])
+      .then(([tipsData, quotesData]) => {
+        setTips(tipsData);
+        setQuotes(quotesData);
         setLoadingTips(false);
       })
       .catch((err) => {
-        console.error("Failed to load tips on Home Page:", err);
+        console.error("Failed to load home page widgets data:", err);
         setLoadingTips(false);
       });
   }, []);
@@ -97,6 +108,19 @@ function HomePage() {
     const index = Math.abs(hash) % tips.length;
     return tips[index];
   }, [tips]);
+
+  // Determine a stable random "Quote of the Day" using date hash
+  const quoteOfTheDay = useMemo(() => {
+    if (!quotes.length) return null;
+    const dateString = new Date().toDateString();
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+      hash = dateString.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    // Add an offset of 3 to distinguish quote index from tip index
+    const index = (Math.abs(hash) + 3) % quotes.length;
+    return quotes[index];
+  }, [quotes]);
 
   const quickActions = [
     { to: "/map", icon: Map, label: t("viewMap"), desc: t("tagline"), bg: "text-emerald-500 bg-emerald-500/10 dark:bg-emerald-500/20" },
@@ -185,7 +209,10 @@ function HomePage() {
             <ShieldCheck className="h-4.5 w-4.5 text-primary shrink-0" />
             <h2 className="text-xs font-black uppercase tracking-wider text-muted-foreground">{t("tipOfTheDay")}</h2>
           </div>
-          <SafetyTipCard tip={tipOfTheDay} />
+          <div className="flex flex-col gap-4">
+            <SafetyTipCard tip={tipOfTheDay} />
+            {quoteOfTheDay && <QuoteCard quote={quoteOfTheDay} />}
+          </div>
         </section>
       )}
 
