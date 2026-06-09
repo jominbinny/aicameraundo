@@ -97,7 +97,7 @@ function DesktopNavbar() {
     <div className="hidden md:block fixed top-4 inset-x-0 z-[1000] mx-auto max-w-6xl px-4 w-full">
       <header className="flex items-center justify-between rounded-full border border-border/40 bg-card/75 px-6 py-2.5 shadow-xl backdrop-blur-md">
         <Link to="/" className="flex items-center gap-2 select-none">
-          <img src={logo} alt="SafeDrive Kerala logo" width={34} height={34} className="h-8.5 w-8.5" />
+          <img src={logo} alt="SafeDriveKeralam logo" width={34} height={34} className="h-8.5 w-8.5" />
           <div className="leading-tight">
             <span className="text-sm font-black text-foreground">{t("appName")}</span>
             <p className="text-[9px] text-muted-foreground font-semibold">{t("tagline")}</p>

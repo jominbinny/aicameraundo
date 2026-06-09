@@ -23,13 +23,13 @@ import SafetyTipCard from "@/components/ui/SafetyTipCard";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SafeDrive Kerala — Road Safety & AI Camera Portal" },
+      { title: "SafeDriveKeralam — Road Safety & AI Camera Portal" },
       {
         name: "description",
         content:
           "Explore traffic safety zones, search fine rules, check guidelines, and browse AI camera locations across Kerala roads.",
       },
-      { property: "og:title", content: "SafeDrive Kerala" },
+      { property: "og:title", content: "SafeDriveKeralam" },
       {
         property: "og:description",
         content: "Road Safety & AI Camera Information Portal.",
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "SafeDrive Kerala",
+          name: "SafeDriveKeralam",
           applicationCategory: "TravelApplication",
           operatingSystem: "Web",
           description: "Road Safety & AI Camera Information Portal.",
@@ -119,7 +119,7 @@ function HomePage() {
       <section className="relative text-center pt-4 pb-2 md:pt-10 rounded-3xl bg-gradient-to-b from-primary/5 via-transparent to-transparent">
         <img
           src={logo}
-          alt="SafeDrive Kerala logo"
+          alt="SafeDriveKeralam logo"
           width={90}
           height={90}
           className="mx-auto h-22 w-22 drop-shadow-md select-none transition-transform duration-500 hover:scale-105"

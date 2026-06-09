@@ -15,7 +15,7 @@ export default function PageHeader({ subtitle }: PageHeaderProps) {
         <Link to="/" className="flex items-center gap-2.5 active:scale-95 transition-transform">
           <img
             src={logo}
-            alt="SafeDrive Kerala logo"
+            alt="SafeDriveKeralam logo"
             width={34}
             height={34}
             className="h-8.5 w-8.5 select-none"

@@ -9,7 +9,7 @@ import { PhoneCall, AlertTriangle } from "lucide-react";
 export const Route = createFileRoute("/emergency")({
   head: () => ({
     meta: [
-      { title: "Emergency Helpline Contacts Kerala — SafeDrive Kerala" },
+      { title: "Emergency Helpline Contacts Kerala — SafeDriveKeralam" },
       {
         name: "description",
         content: "Quick click-to-call emergency helpline numbers in Kerala: Police, Ambulance, Fire Force, Women, and Child safety.",

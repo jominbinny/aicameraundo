@@ -11,7 +11,7 @@ import { ShieldAlert, Sparkles, Lightbulb } from "lucide-react";
 export const Route = createFileRoute("/safety-tips")({
   head: () => ({
     meta: [
-      { title: "Road Safety Tips & Guidelines Kerala — SafeDrive Kerala" },
+      { title: "Road Safety Tips & Guidelines Kerala — SafeDriveKeralam" },
       {
         name: "description",
         content: "Important road safety tips for Kerala drivers: Helmet safety, Seatbelts, Night driving, Rain driving, and Highway guidelines.",

@@ -6,10 +6,10 @@ import { Info, Target, Compass, FileText, Database } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — SafeDrive Kerala" },
+      { title: "About Us — SafeDriveKeralam" },
       {
         name: "description",
-        content: "Learn more about the SafeDrive Kerala initiative, our mission for traffic compliance, data sources, and disclaimer.",
+        content: "Learn more about the SafeDriveKeralam initiative, our mission for traffic compliance, data sources, and disclaimer.",
       },
     ],
     links: [{ rel: "canonical", href: "/about" }],

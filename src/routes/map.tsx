@@ -11,7 +11,7 @@ import { searchCameras, getDistricts } from "@/services/cameraService";
 export const Route = createFileRoute("/map")({
   head: () => ({
     meta: [
-      { title: "Map — SafeDrive Kerala" },
+      { title: "Map — SafeDriveKeralam" },
       {
         name: "description",
         content: "Browse all Kerala MVD AI traffic cameras on an interactive clustered map.",

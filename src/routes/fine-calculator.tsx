@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/fine-calculator")({
   head: () => ({
     meta: [
-      { title: "Fine Calculator — SafeDrive Kerala" },
+      { title: "Fine Calculator — SafeDriveKeralam" },
       {
         name: "description",
         content: "Calculate expected traffic fines for common violations detected by Kerala MVD AI cameras.",

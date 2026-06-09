@@ -15,7 +15,7 @@ const BUFFER_KM = 1.5;
 export const Route = createFileRoute("/route-checker")({
   head: () => ({
     meta: [
-      { title: "Route Checker — SafeDrive Kerala" },
+      { title: "Route Checker — SafeDriveKeralam" },
       {
         name: "description",
         content: "Check which Kerala AI traffic cameras lie along your travel route.",

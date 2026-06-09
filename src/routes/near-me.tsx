@@ -13,7 +13,7 @@ import { nearestCameras } from "@/utils/distance";
 export const Route = createFileRoute("/near-me")({
   head: () => ({
     meta: [
-      { title: "Near Me — SafeDrive Kerala" },
+      { title: "Near Me — SafeDriveKeralam" },
       {
         name: "description",
         content: "Find the AI traffic cameras nearest to your current location in Kerala.",

@@ -11,7 +11,7 @@ import { TrafficCone } from "lucide-react";
 export const Route = createFileRoute("/road-signs")({
   head: () => ({
     meta: [
-      { title: "Traffic Road Signs Kerala — SafeDrive Kerala" },
+      { title: "Traffic Road Signs Kerala — SafeDriveKeralam" },
       {
         name: "description",
         content: "Learn Mandatory, Warning, and Informatory traffic road signs in Malayalam and English for Kerala drivers.",

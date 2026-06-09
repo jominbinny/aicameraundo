@@ -1,7 +1,7 @@
 {
-  "name": "SafeDrive Kerala",
-  "short_name": "SafeDriveKerala",
-  "description": "SafeDrive Kerala helps drivers navigate Kerala roads safely with traffic safety guidelines, penalty fine calculator, and safety camera enforcement zones.",
+  "name": "SafeDriveKeralam",
+  "short_name": "SafeDriveKeralam",
+  "description": "SafeDriveKeralam helps drivers navigate Kerala roads safely with traffic safety guidelines, penalty fine calculator, and safety camera enforcement zones.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",

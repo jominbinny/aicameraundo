@@ -9,7 +9,7 @@ import { BookOpen, CheckCircle, Info } from "lucide-react";
 export const Route = createFileRoute("/learners-license")({
   head: () => ({
     meta: [
-      { title: "Learner's Licence Guide Kerala — SafeDrive Kerala" },
+      { title: "Learner's Licence Guide Kerala — SafeDriveKeralam" },
       {
         name: "description",
         content: "Complete guide to Learner's Licence in Kerala: eligibility, documents, online application process, fees, validity, and RTO rules.",
