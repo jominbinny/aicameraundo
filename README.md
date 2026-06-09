@@ -1,4 +1,4 @@
-# 📸 SafeDrive Kerala
+# 📸 SafeDriveKeralam
 
 [![React](https://img.shields.io/badge/React-19-blue.svg?logo=react)](https://react.dev/)
 [![TanStack Router](https://img.shields.io/badge/TanStack-Router-ff5a1a.svg?logo=react)](https://tanstack.com/router/latest/docs/framework/react/overview)
@@ -6,10 +6,10 @@
 [![Leaflet](https://img.shields.io/badge/Leaflet-1.9-green.svg?logo=leaflet)](https://leafletjs.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**SafeDrive Kerala** is a high-performance, responsive web application designed to promote road safety awareness and help drivers navigate Kerala's roads safely. It offers information on Motor Vehicle Department (MVD) traffic safety camera locations, traffic rules, and fine specifications.
+**SafeDriveKeralam** is a high-performance, responsive web application designed to promote road safety awareness and help drivers navigate Kerala's roads safely. It offers information on Motor Vehicle Department (MVD) traffic safety camera locations, traffic rules, and fine specifications.
 
 > [!WARNING]
-> **Unofficial Community Portal**: SafeDrive Kerala is an unofficial, community-driven informational resource. It is **NOT** affiliated with, endorsed by, or associated with the Kerala Motor Vehicles Department (MVD) or any other government organisation. All information is provided for public awareness and educational purposes only. For official guidelines and legally binding rules, please refer to the [Official Kerala MVD website](https://mvd.kerala.gov.in/).
+> **Unofficial Community Portal**: SafeDriveKeralam is an unofficial, community-driven informational resource. It is **NOT** affiliated with, endorsed by, or associated with the Kerala Motor Vehicles Department (MVD) or any other government organisation. All information is provided for public awareness and educational purposes only. For official guidelines and legally binding rules, please refer to the [Official Kerala MVD website](https://mvd.kerala.gov.in/).
 
 ---
 

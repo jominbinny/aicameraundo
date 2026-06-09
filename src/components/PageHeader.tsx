@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
 import LanguageToggle from "@/components/LanguageToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useLanguage } from "@/hooks/useLanguage";
 
 interface PageHeaderProps {
@@ -25,7 +26,10 @@ export default function PageHeader({ subtitle }: PageHeaderProps) {
             {subtitle && <p className="text-[10px] font-bold text-primary truncate max-w-[150px]">{subtitle}</p>}
           </div>
         </Link>
-        <LanguageToggle />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <LanguageToggle />
+        </div>
       </div>
     </header>
   );

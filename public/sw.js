@@ -1,4 +1,4 @@
-const CACHE_NAME = "safedrive-kerala-v1";
+const CACHE_NAME = "safedrivekeralam-v1";
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",

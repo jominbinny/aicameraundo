@@ -9,8 +9,10 @@ import {
 import { useEffect } from "react";
 
 import { LanguageProvider, useLanguage } from "@/hooks/useLanguage";
+import { ThemeProvider } from "@/hooks/useTheme";
 import BottomNav from "@/components/BottomNav";
 import LanguageToggle from "@/components/LanguageToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 import logo from "@/assets/logo.png";
 
 function NotFoundComponent() {
@@ -124,6 +126,7 @@ function DesktopNavbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <LanguageToggle />
         </div>
       </header>
@@ -147,14 +150,16 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <LanguageProvider>
-        <DesktopNavbar />
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <div className="min-h-screen pt-0 md:pt-24 pb-16 md:pb-8">
-          <Outlet />
-        </div>
-        <BottomNav />
-      </LanguageProvider>
+      <ThemeProvider>
+        <LanguageProvider>
+          <DesktopNavbar />
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <div className="min-h-screen pt-0 md:pt-24 pb-16 md:pb-8">
+            <Outlet />
+          </div>
+          <BottomNav />
+        </LanguageProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

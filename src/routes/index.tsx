@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import LanguageToggle from "@/components/LanguageToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useLanguage } from "@/hooks/useLanguage";
 import { getCameraCount, getDistricts } from "@/services/cameraService";
 import FeatureCard from "@/components/ui/FeatureCard";
@@ -111,7 +112,8 @@ function HomePage() {
   return (
     <div className="animate-fade-in space-y-7 pb-12 max-w-4xl mx-auto px-4 sm:px-6">
       {/* Top bar for mobile only */}
-      <div className="flex items-center justify-end py-2 md:hidden">
+      <div className="flex items-center justify-end gap-2 py-2 md:hidden">
+        <ThemeToggle />
         <LanguageToggle />
       </div>
 
